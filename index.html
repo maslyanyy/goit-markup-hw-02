@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/styles.css">
-   
 </head>
 <body>
     <!--Шапка сайта-->
     <header>
        <nav>
-        <a class="main-name" href="">Web Studio</a>
+        <a class="main-name link" href="http://127.0.0.1:5500/"><span class="main-name-web">Web</span> Studio</a>
         <ul class="navigation-list">
-            <li><a class="navigation-list-link" href="">Студия</a></li>
-            <li><a class="navigation-list-link" href="http://127.0.0.1:5500/potfolio.html">Портфолио</a></li>
-            <li><a class="navigation-list-link" href="">Контакты</a></li>
+            <li><a class="navigation-list-link link" href="">Студия</a></li>
+            <li><a class="navigation-list-link link" href="http://127.0.0.1:5500/potfolio.html">Портфолио</a></li>
+            <li><a class="navigation-list-link link" href="">Контакты</a></li>
         </ul>
         <img src="./image/messagelogo.svg" alt="">
         <ul>
-            <li><a class="contact-info"  href="mail:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-info link"  href="mail:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
         <img src="./image/smartphonelogo.svg" alt="">
         <ul>
-            <li><a class="contact-info" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="contact-info link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
        </nav>
     </header>
@@ -32,40 +33,40 @@
 
     <main>
         <img src="./image/headerimg.png" alt="" width="800">
-    <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+    <section class="effective-solution">
+        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="order-service-link">Заказать услугу</button>
     </section>
 
     <!--О нас-->
 
-    <section>
-        <h2>Внимание к деталям</h2>
+    <section class="information-list-about-us">
+        <h2 class="description">Внимание к деталям</h2>
         <ul>
         <li>
             <img src="./image/antenna1.svg" alt="">
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p class="description-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
         </ul>
-        <h3>Пунктуальность</h3>
+        <h3 class="description">Пунктуальность</h3>
         <ul>
             <li>
                 <img src="./image/clock1.svg" alt="">
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <p class="description-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
         </ul>
-        <h4>Планирование</h4>
+        <h4 class="description">Планирование</h4>
         <ul>
             <li>
                 <img src="./image/diagram1.svg" alt="">
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <p class="description-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
         </ul>
-        <h5>Современные технологии</h5>
+        <h5 class="description">Современные технологии</h5>
         <ul>
             <li>
                 <img src="./image/astronaut1.svg" alt="">
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <p class="description-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>
@@ -73,23 +74,23 @@
     <!--Чем мы занимаемся-->
 
     <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="what-we-do">Чем мы занимаемся</h2>
         <ul>
             <li>
                 <img src="./image/applications.png" alt="">
-                <p>Десктопные приложения</p>
+                <p class="our-work">Десктопные приложения</p>
             </li>
         </ul>    
         <ul>
             <li>
                 <img src="./image/mobileapplications.png" alt="">
-                <p>Мобильные приложения</p>
+                <p class="our-work">Мобильные приложения</p>
             </li>
         </ul>
         <ul>
             <li>
                 <img src="./image/designsolutions.png" alt="">
-                <p>Дизайнерские решения</p>
+                <p class="our-work">Дизайнерские решения</p>
             </li>
         </ul>
     </section>
@@ -97,8 +98,9 @@
     <!--Команда-->
 
     <section>
-        <h2>Николай Кучеренко</h2>
-        <p>Product Designer</p>
+        <p class="our-team">Наша команда</p>
+        <h2 class="team-member">Николай Кучеренко</h2>
+        <p class="position">Product Designer</p>
         <ul class="logo-list">
             <li class="logo-list-item">
                 <img src="./image/teammember1.png" alt="">
@@ -116,8 +118,8 @@
                 <img src="./image/linkedinlogo.svg" alt="">
             </li>
         </ul>
-        <h3>Ольга Иванова</h3>
-        <p>Frontend Developer</p>
+        <h3 class="team-member">Ольга Иванова</h3>
+        <p class="position">Frontend Developer</p>
         <ul class="logo-list">
             <li class="logo-list-item">
                 <img src="./image/teammember2.png" alt="">
@@ -135,8 +137,8 @@
                 <img src="./image/linkedinlogo.svg" alt="">
             </li>
         </ul>
-        <h4>Андрей Шевченко</h4>
-        <p>Marketing</p>
+        <h4 class="team-member">Андрей Шевченко</h4>
+        <p class="position">Marketing</p>
         <ul class="logo-list">
             <li class="logo-list-item">
                 <img src="./image/teammember3.png" alt="">
@@ -154,8 +156,8 @@
                 <img src="./image/linkedinlogo.svg" alt="">
             </li>
         </ul>
-        <h5>Иван Николаев</h5>
-        <p>UI Designer</p>
+        <h5 class="team-member">Иван Николаев</h5>
+        <p class="position">UI Designer</p>
         <ul class="logo-list">
             <li class="logo-list-item">
                 <img src="./image/teammember4.png" alt="">
@@ -178,7 +180,7 @@
     <!--Постоянные клиенты-->
 
     <section>
-        <h2>Постоянные клиенты</h2>
+        <h2 class="customers">Постоянные клиенты</h2>
         <ul>
             <li class="logo-list-item">
                 <img src="./image/Client1.png" alt="">
@@ -206,14 +208,14 @@
 
     <footer>
         <div>
-            <a href="">Web Studio</a>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="main-name link" href=""><span class="main-name-web">Web</span> Studio</a>
+            <p class="our-address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
-                <li><a href="mail:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li><a class="contact-info link" href="mail:info@example.com">info@example.com</a></li>
+                <li><a class="contact-info link" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </div>
-        <p>Присоединяйтесь</p>
+        <p class="join">Присоединяйтесь</p>
         <div>
             <ul>
                 <li>
